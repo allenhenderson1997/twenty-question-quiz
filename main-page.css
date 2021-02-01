@@ -1,0 +1,116 @@
+@media (max-width: 400px) {
+
+    .navigation-bar {
+
+        background: linear-gradient(to right, black, gray);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .navigation-bar li {
+
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1069px) {
+
+    .navigation-bar {
+
+        display: flex;
+    }
+
+    .navigation-bar li {
+
+        flex-direction: row;
+    }
+}
+
+@font-face {
+
+    font-family: Crackman;
+    src: url(fonts/crackman/crackman.ttf);
+}
+body {
+
+    margin: 0;
+}
+header {
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Styling for main page */
+
+.main-title h1,
+.main-title p {
+
+    position: relative;
+    top: 150px;
+    color: white;
+    text-align: center;
+    
+}
+
+.main-title h1 {
+
+    font-size: 100px;
+    font-family: Crackman;
+}
+
+.main-title p {
+
+    font-size: 60px;
+    font-family: Arial Narrow;
+}
+
+.main-title video {
+
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+/* End of styling for main page */
+
+#logo {
+
+    color: yellow;
+    font-family: Arial Black;
+    font-size: 40px;
+    transform: rotate(-15deg);
+}
+
+.navigation-bar {
+
+    display: flex;
+    flex-wrap: wrap;
+    background-color: none;
+    list-style-type: none;
+    margin-right: 25px;
+}
+
+.navigation-bar li {
+
+    justify-content: space-around;
+    padding: 10px;
+
+}
+
+.navigation-bar li a {
+
+    text-decoration: none;
+    color: white;
+    font-family: Tahoma;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.questions {
+
+    display: flex;
+    flex-direction: row;
+}
