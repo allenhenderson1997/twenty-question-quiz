@@ -87,8 +87,68 @@ header {
     font-weight: bold;
 }
 
-.questions {
+/* All styling for the questions */
+
+.questions-anchors {
 
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    background-color: #0080FF;
+    margin-left: 0;
+    padding-left: 0;
 }
+
+
+
+.questions-anchors li a {
+
+    text-decoration: none;
+    color: white;
+    font-family: Tahoma;
+}
+
+.questions-container {
+
+    margin: auto;
+    width: 60%;
+    border: 2px solid black;
+    justify-content: flex-start;
+    padding: 30px;
+}
+
+.questions-container div {
+
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.question-title {
+
+    font-family: Arial Black;
+}
+
+.questions-container div button {
+
+    background-color: #2ECCFA;
+    border-radius: 30px;
+    border: 2px solid black;
+    font-size: 30px;
+    margin-top: 50px;
+    border-bottom: 10px solid #01A9DB;
+    transform: transition;
+    transition: all .2s ease-in-out;
+    
+}
+
+.questions-container div button:active {
+
+    border-bottom: none;
+    top: 5px;
+    position: relative;
+}
+/* Ending of the styling for the questions */

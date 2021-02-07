@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script type="text/javascript" src="questions-behavior.js"></script>
     <title>20 Questions Quiz</title>
 </head>
 <body>
@@ -15,7 +16,7 @@
             <li><a href="questions.html">play the quiz</a></li>
         </ul>
     </header>
-    <ul class="questions">
+    <ul class="questions-anchors">
         <li><a href="#question1">1</a></li>
         <li><a href="#question2">2</a></li>
         <li><a href="#question3">3</a></li>
@@ -38,6 +39,91 @@
         <li><a href="#question20">20</a></li>
     </ul>
 
-
+    <div class="questions-container">
+        <div id="question1">
+            <span class="question-title">Who was the first president of the United States?</span>
+            <p id="answer1"></p>
+            <button type="button" onclick="questionOne()">Answer this question</button>
+        </div>
+        <br>
+        <div id="question2">
+            <span class="question-title">In the movie "Home Alone 2: Lost In New York", which president of the United States appeared in the movie as a hotel guest?</span>
+            <p id="answer2"></p>
+            <button type="button" onclick="questionTwo()">Answer this question</button>
+        </div>
+        <br>
+        <div id="question3">
+            <span class="question-title">Where was Abraham Lincoln born?</span>
+            <button type="button" onclick="">Answer this question</button>
+        </div>
+        <div id="question4">
+            <span class="question-title">Where was John F. Kennedy assassinated?</span>
+            <button type="button" onclick="">Answer this question</button>
+        </div>
+        <div id="question5">
+            <span class="question-title">One man assassinated John F. Kennedy and another man assassinated Abraham Lincoln. What was the first name of the two men?</span>
+            <button type="button" onclick="">Answer this question</button>
+        </div>
+        <div id="question6">
+            <span class="question-title">What web development language handles the structure of a webpage?</span>
+            <button type="button" onclick="">Answer this question</button>
+        </div>
+        <div id="question7">
+            <span class="question-title">What illness caused a pandemic in early 2020?</span>
+            <button type="button" onclick="">Answer this question</button>
+        </div>
+        <div id="question8">
+            <span class="question-title">What city is the capital of Kentucky?</span>
+            <button type="button" onclick="">Answer this question</button>
+        </div>
+        <div id="question9">
+            <span class="question-title">What year did Code Louisville start doing classes?</span>
+            <button type="button" onclick="">Answer this question</button>
+        </div>
+        <div id="question10">
+            <span class="question-title">What state is Gatlinburg?</span>
+            <button type="button" onclick="">Answer this question</button>
+        </div>
+        <div id="question11">
+            <span class="question-title">What state is Myrtle Beach located in?</span>
+            <button type="button" onclick="">Answer this question</button>
+        </div>
+        <div id="question12">
+            <span class="question-title">What city was bombed on December 25, 2020?</span>
+            <button type="button" onclick="">Answer this question</button>
+        </div>
+        <div id="question13">
+            <span class="question-title">What school had a active shooter in 2012?</span>
+            <button type="button" onclick="">Answer this question</button>
+        </div>
+        <div id="question14">
+            <span class="question-title">What does NTI stand for?</span>
+            <button type="button" onclick="">Answer this question</button>
+        </div>
+        <div id="question15">
+            <span class="question-title">Where does the current president live?</span>
+            <button type="button" onclick="">Answer this question</button>
+        </div>
+        <div id="question16">
+            <span class="question-title">What is it called when a car is losing it's value over time?</span>
+            <button type="button" onclick="">Answer this question</button>
+        </div>
+        <div id="question17">
+            <span class="question-title">What programming language controls the behavior of a webpage?</span>
+            <button type="button" onclick="">Answer this question</button>
+        </div>
+        <div id="question18">
+            <span class="question-title">What year did Hurricane Katrina happen?</span>
+            <button type="button" onclick="">Answer this question</button>
+        </div>
+        <div id="question19">
+            <span class="question-title">What color does blue and red make?</span>
+            <button type="button" onclick="">Answer this question</button>
+        </div>
+        <div id="question20">
+            <span class="question-title">What does X + 4 = 8 equal to be?</span>
+            <button type="button" onclick="">Answer this question</button>
+        </div>
+    </div>
 </body>
 </html>
