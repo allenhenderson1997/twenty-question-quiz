@@ -16,113 +16,133 @@
             <li><a href="questions.html">play the quiz</a></li>
         </ul>
     </header>
-    <ul class="questions-anchors">
-        <li><a href="#question1">1</a></li>
-        <li><a href="#question2">2</a></li>
-        <li><a href="#question3">3</a></li>
-        <li><a href="#question4">4</a></li>
-        <li><a href="#question5">5</a></li>
-        <li><a href="#question6">6</a></li>
-        <li><a href="#question7">7</a></li>
-        <li><a href="#question8">8</a></li>
-        <li><a href="#question9">9</a></li>
-        <li><a href="#question10">10</a></li>
-        <li><a href="#question11">11</a></li>
-        <li><a href="#question12">12</a></li>
-        <li><a href="#question13">13</a></li>
-        <li><a href="#question14">14</a></li>
-        <li><a href="#question15">15</a></li>
-        <li><a href="#question16">16</a></li>
-        <li><a href="#question17">17</a></li>
-        <li><a href="#question18">18</a></li>
-        <li><a href="#question19">19</a></li>
-        <li><a href="#question20">20</a></li>
-    </ul>
+
+    <div id="scoreboard">
+        <span id="amount-of-questions-right">Q's Correct: 0</span>
+        <span id="amount-of-questions-wrong">Q's Incorrect: 0</span>
+    </div>
 
     <div class="questions-container">
+
+        <h2>Questions</h2>
         <div id="question1">
             <span class="question-title">Who was the first president of the United States?</span>
             <p id="answer1"></p>
-            <button type="button" onclick="questionOne()">Answer this question</button>
+            <button type="button" id="buttonOne" onclick="questionOne()">Answer this question</button>
         </div>
         <br>
         <div id="question2">
             <span class="question-title">In the movie "Home Alone 2: Lost In New York", which president of the United States appeared in the movie as a hotel guest?</span>
             <p id="answer2"></p>
-            <button type="button" onclick="questionTwo()">Answer this question</button>
+            <button type="button" id="buttonTwo" onclick="questionTwo()">Answer this question</button>
         </div>
         <br>
         <div id="question3">
             <span class="question-title">Where was Abraham Lincoln born?</span>
-            <button type="button" onclick="">Answer this question</button>
+            <p id="answer3"></p>
+            <button type="button" id="buttonThree"  onclick="questionThree()">Answer this question</button>
         </div>
+        <br>
         <div id="question4">
             <span class="question-title">Where was John F. Kennedy assassinated?</span>
-            <button type="button" onclick="">Answer this question</button>
+            <p id="answer4"></p>
+            <button type="button" id="buttonFour" onclick="questionFour()">Answer this question</button>
         </div>
+        <br>
         <div id="question5">
             <span class="question-title">One man assassinated John F. Kennedy and another man assassinated Abraham Lincoln. What was the first name of the two men?</span>
-            <button type="button" onclick="">Answer this question</button>
+            <p id="answer5"></p>
+            <button type="button" id="buttonFive" onclick="questionFive()">Answer this question</button>
         </div>
+        <br>
         <div id="question6">
             <span class="question-title">What web development language handles the structure of a webpage?</span>
-            <button type="button" onclick="">Answer this question</button>
+            <p id="answer6"></p>
+            <button type="button" id="buttonSix" onclick="questionSix()">Answer this question</button>
         </div>
+        <br>
         <div id="question7">
             <span class="question-title">What illness caused a pandemic in early 2020?</span>
-            <button type="button" onclick="">Answer this question</button>
+            <p id="answer7"></p>
+            <button type="button" id="buttonSeven" onclick="questionSeven()">Answer this question</button>
         </div>
+        <br>
         <div id="question8">
             <span class="question-title">What city is the capital of Kentucky?</span>
-            <button type="button" onclick="">Answer this question</button>
+            <p id="answer8"></p>
+            <button type="button" id="buttonEight" onclick="questionEight()">Answer this question</button>
         </div>
+        <br>
         <div id="question9">
             <span class="question-title">What year did Code Louisville start doing classes?</span>
-            <button type="button" onclick="">Answer this question</button>
+            <p id="answer9"></p>
+            <button type="button" id="buttonNine" onclick="questionNine()">Answer this question</button>
         </div>
+        <br>
         <div id="question10">
             <span class="question-title">What state is Gatlinburg?</span>
-            <button type="button" onclick="">Answer this question</button>
+            <p id="answer10"></p>
+            <button type="button" id="buttonTen" onclick="questionTen()">Answer this question</button>
         </div>
+        <br>
         <div id="question11">
             <span class="question-title">What state is Myrtle Beach located in?</span>
-            <button type="button" onclick="">Answer this question</button>
+            <p id="answer11"></p>
+            <button type="button" id="buttonEleven" onclick="questionEleven()">Answer this question</button>
         </div>
+        <br>
         <div id="question12">
             <span class="question-title">What city was bombed on December 25, 2020?</span>
-            <button type="button" onclick="">Answer this question</button>
+            <p id="answer12"></p>
+            <button type="button" id="buttonTwelve" onclick="questionTwelve()">Answer this question</button>
         </div>
+        <br>
         <div id="question13">
             <span class="question-title">What school had a active shooter in 2012?</span>
-            <button type="button" onclick="">Answer this question</button>
+            <p id="answer13"></p>
+            <button type="button" id="buttonThirteen" onclick="questionThirteen()">Answer this question</button>
         </div>
+        <br>
         <div id="question14">
             <span class="question-title">What does NTI stand for?</span>
-            <button type="button" onclick="">Answer this question</button>
+            <p id="answer14"></p>
+            <button type="button" id="buttonFourteen" onclick="questionFourteen()">Answer this question</button>
         </div>
+        <br>
         <div id="question15">
             <span class="question-title">Where does the current president live?</span>
-            <button type="button" onclick="">Answer this question</button>
+            <p id="answer15"></p>
+            <button type="button" id="buttonFifteen" onclick="questionFifteen()">Answer this question</button>
         </div>
+        <br>
         <div id="question16">
             <span class="question-title">What is it called when a car is losing it's value over time?</span>
-            <button type="button" onclick="">Answer this question</button>
+            <p id="answer16"></p>
+            <button type="button" id="buttonSixteen" onclick="questionSixteen()">Answer this question</button>
         </div>
+        <br>
         <div id="question17">
             <span class="question-title">What programming language controls the behavior of a webpage?</span>
-            <button type="button" onclick="">Answer this question</button>
+            <p id="answer17"></p>
+            <button type="button" id="buttonSeventeen" onclick="questionSeventeen()">Answer this question</button>
         </div>
+        <br>
         <div id="question18">
             <span class="question-title">What year did Hurricane Katrina happen?</span>
-            <button type="button" onclick="">Answer this question</button>
+            <p id="answer18"></p>
+            <button type="button" id="buttonEighteen" onclick="questionEighteen()">Answer this question</button>
         </div>
+        <br>
         <div id="question19">
             <span class="question-title">What color does blue and red make?</span>
-            <button type="button" onclick="">Answer this question</button>
+            <p id="answer19"></p>
+            <button type="button" id="buttonNineteen" onclick="questionNineteen()">Answer this question</button>
         </div>
+        <br>
         <div id="question20">
             <span class="question-title">What does X + 4 = 8 equal to be?</span>
-            <button type="button" onclick="">Answer this question</button>
+            <p id="answer20"></p>
+            <button type="button" id="buttonTwenty" onclick="questionTwenty()">Answer this question</button>
         </div>
     </div>
 </body>

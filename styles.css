@@ -26,9 +26,16 @@
         flex-direction: row;
     }
 }
+
+@font-face {
+
+    font-family: Beautiful Friends;
+    src: url(fonts/beautiful-friends/beautiful-friends.ttf);
+}
 body {
 
     margin: 0;
+    box-sizing: border-box;
 }
 header {
 
@@ -87,6 +94,79 @@ header {
     font-weight: bold;
 }
 
+/* How To Play page styling */
+
+.how-to-play-video {
+
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+}
+
+.rules-of-quiz {
+
+    margin-top: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    border: 1px solid white;
+    width: 75%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+}
+
+.rules-of-quiz span {
+
+    font-size: 60px;
+    font-family: Beautiful Friends;
+    color: red;
+    padding-bottom: 50px;
+
+}
+
+.rules-of-quiz p {
+
+    color: gray;
+    font-family: Arial Narrow;
+    text-align: left;
+    margin: 80px;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+.rules-of-quiz ol {
+
+    font-size: 18px;
+    font-family: Tahoma;
+    color: gray;
+    text-align: left;
+    margin-top: 10px;
+    margin: 80px;
+}
+
+.medals-rewards {
+
+    margin-left: 35px;
+}
+
+.medals-rewards li {
+
+    list-style-type: none;
+    font-family: Tahoma;
+    font-size: 30px;
+    text-align: left;
+    color: gray;
+    
+}
+
+/* How To Play page styling ends */
+
+
+
 /* All styling for the questions */
 
 .questions-anchors {
@@ -111,11 +191,14 @@ header {
 
 .questions-container {
 
-    margin: auto;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
     width: 60%;
-    border: 2px solid black;
+    border: 1px solid black;
     justify-content: flex-start;
     padding: 30px;
+    box-shadow: 10px 5px 5px 5px gray;
 }
 
 .questions-container div {
@@ -124,12 +207,27 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-top: 60px;
+}
+
+.questions-container div p {
+
+    font-size: 18px;
+    font-family: Tahoma;
+}
+
+.questions-container h2 {
+
+    text-align: center;
+    font-family: Beautiful Friends;
+    font-size: 60px;
 }
 
 
 .question-title {
 
     font-family: Arial Black;
+    font-size: 25px;
 }
 
 .questions-container div button {
@@ -150,5 +248,19 @@ header {
     border-bottom: none;
     top: 5px;
     position: relative;
+}
+
+#scoreboard {
+
+    background-color: #00FFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#scoreboard span {
+
+    font-family: Arial Black;
+    font-size: 30px;
 }
 /* Ending of the styling for the questions */
