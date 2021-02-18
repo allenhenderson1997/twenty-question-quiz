@@ -1,27 +1,60 @@
 let questionsRight = 0;
 let questionsWrong = 0;
-let bronzeMedal = "None";
+let medals = "None";
+const GameOverReminder = new Audio('audio/three-wrong-answers-reminder.mp3');
+const ItsGameOver = new Audio('audio/game-over.wav');
+
 
 
 function theAnswerIsRight() {
 
     questionsRight++;
     document.getElementById("amount-of-questions-right").innerHTML = "Q's Correct: " + questionsRight;
+    medalEarned();
 }
 
 function theAnswerIsWrong() {
 
-    if (questionsWrong >= 3)
-    {
-
+    if (questionsWrong == 2) {
+        document.getElementById("scoreboard").style.display = "none";
         document.getElementById("questions-container").style.display = "none";
-        alert("Game over!")
+        document.querySelector('header').style.display = "none";
+        document.getElementById("game-over").style.display = "block";
+        ItsGameOver.play();
+
+    } else {
+        questionsWrong++;
+    document.getElementById("amount-of-questions-wrong").innerHTML = "Q's Incorrect: " + questionsWrong;
+    medalEarned();
+    GameOverReminder.play();
+    }
+    
+}
+
+function medalEarned() {
+
+    if (questionsRight <= 5) {
+
+        medals = "None";
+        document.getElementById("player-earned-medal").innerHTML = "Medal You Earned: " + medals;
     }
 
-    else {
+    if (questionsRight >= 5 && questionsRight <= 10) {
 
-        questionsWrong++;
-        document.getElementById("amount-of-questions-wrong").innerHTML = "Q's Incorrect: " + questionsWrong;
+        medals = "Bronze";
+        document.getElementById("player-earned-medal").innerHTML = "Medal You Earned: " + medals;
+    }
+
+    if (questionsRight >= 10 && questionsRight <= 15) {
+
+        medals = "Silver";
+        document.getElementById("player-earned-medal").innerHTML = "Medal You Earned: " + medals;
+    }
+
+    if (questionsRight >= 15 && questionsRight <= 20) {
+
+        medals = "Gold";
+        document.getElementById("player-earned-medal").innerHTML = "Medal You Earned: " + medals;
     }
 }
 // All questions //

@@ -32,6 +32,12 @@
     font-family: Beautiful Friends;
     src: url(fonts/beautiful-friends/beautiful-friends.ttf);
 }
+
+@font-face {
+
+    font-family: Campus;
+    src: url(fonts/campus/campus.ttf)
+}
 body {
 
     margin: 0;
@@ -189,7 +195,7 @@ header {
     font-family: Tahoma;
 }
 
-.questions-container {
+#questions-container {
 
     margin-top: 100px;
     margin-left: auto;
@@ -201,7 +207,7 @@ header {
     box-shadow: 10px 5px 5px 5px gray;
 }
 
-.questions-container div {
+#questions-container div {
 
     
     display: flex;
@@ -210,13 +216,13 @@ header {
     margin-top: 60px;
 }
 
-.questions-container div p {
+#questions-container div p {
 
     font-size: 18px;
     font-family: Tahoma;
 }
 
-.questions-container h2 {
+#questions-container h2 {
 
     text-align: center;
     font-family: Beautiful Friends;
@@ -230,7 +236,7 @@ header {
     font-size: 25px;
 }
 
-.questions-container div button {
+#questions-container div button {
 
     background-color: #2ECCFA;
     border-radius: 30px;
@@ -243,7 +249,7 @@ header {
     
 }
 
-.questions-container div button:active {
+#questions-container div button:active {
 
     border-bottom: none;
     top: 5px;
@@ -256,6 +262,8 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    position: sticky;
+    top: 0;
 }
 
 #scoreboard span {
@@ -264,3 +272,50 @@ header {
     font-size: 30px;
 }
 /* Ending of the styling for the questions */
+
+/* Begin styling for Game Over pop up */
+
+#game-over {
+
+    
+    position: fixed;
+    height: auto;
+    display: none;
+}
+
+#game-over video {
+
+    z-index: 1;
+    width: 100%;
+}
+
+#game-over span {
+
+    z-index: 2;
+    text-transform: uppercase;
+    font-family: Campus;
+    font-size: 100px;
+    left: 450px;
+    top: 400px;
+    text-align: center;
+    position: absolute;
+    animation-name: fontColorani;
+    animation-duration: .15s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fontColorani {
+
+    from {
+
+        color: red;
+    }
+
+    to {
+
+        color: yellow;
+    }
+}
+
+/* End styling for Game Over pop up */
