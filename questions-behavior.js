@@ -4,24 +4,19 @@ let medals = "None";
 const GameOverReminder = new Audio('audio/three-wrong-answers-reminder.mp3');
 const ItsGameOver = new Audio('audio/game-over.wav');
 
-
-
 function theAnswerIsRight() {
-
     questionsRight++;
     document.getElementById("amount-of-questions-right").innerHTML = "Q's Correct: " + questionsRight;
     medalEarned();
 }
 
 function theAnswerIsWrong() {
-
     if (questionsWrong == 2) {
         document.getElementById("scoreboard").style.display = "none";
         document.getElementById("questions-container").style.display = "none";
         document.querySelector('header').style.display = "none";
         document.getElementById("game-over").style.display = "block";
         ItsGameOver.play();
-
     } else {
         questionsWrong++;
     document.getElementById("amount-of-questions-wrong").innerHTML = "Q's Incorrect: " + questionsWrong;
@@ -36,27 +31,49 @@ function medalEarned() {
     if (questionsRight <= 5) {
 
         medals = "None";
-        document.getElementById("player-earned-medal").innerHTML = "Medal You Earned: " + medals;
+        document.getElementById("player-earned-medal").innerHTML = "Medal You Earned:" + " " + medals;
+        document.getElementById("questions-player-won").innerHTML = "You only got " + questionsRight + " right";
     }
 
     if (questionsRight >= 5 && questionsRight <= 10) {
 
         medals = "Bronze";
         document.getElementById("player-earned-medal").innerHTML = "Medal You Earned: " + medals;
+        document.getElementById("questions-player-won").innerHTML = "You only got " + questionsRight + " right";
     }
 
     if (questionsRight >= 10 && questionsRight <= 15) {
 
         medals = "Silver";
         document.getElementById("player-earned-medal").innerHTML = "Medal You Earned: " + medals;
+        document.getElementById("questions-player-won").innerHTML = "You only got " + questionsRight + " right";
     }
 
     if (questionsRight >= 15 && questionsRight <= 20) {
 
         medals = "Gold";
         document.getElementById("player-earned-medal").innerHTML = "Medal You Earned: " + medals;
+        document.getElementById("questions-player-won").innerHTML = "You only got " + questionsRight + " right";
+    }
+
+    if (questionsRight == 20) {
+
+        window.location = "winner.html";
+
     }
 }
+
+function winnerMainMenu() {
+
+    window.location = "index.html";
+}
+
+function gameIsComplete() {
+
+    medalEarned();
+    window.location = "how-many-questions-you-won.html";
+}
+
 // All questions //
 function questionOne() {
 

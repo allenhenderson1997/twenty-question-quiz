@@ -19,7 +19,6 @@
 
     <div id="scoreboard">
         <span id="amount-of-questions-right">Q's Correct: 0</span>
-        <span id="player-earned-medal">Medal You Earned: None</span>
         <span id="amount-of-questions-wrong">Q's Incorrect: 0</span>
     </div>
 
@@ -145,7 +144,10 @@
             <p id="answer20"></p>
             <button type="button" id="buttonTwenty" onclick="questionTwenty()">Answer this question</button>
         </div>
+        <center><button type="button" id="player-is-done" onclick="gameIsComplete()">What medal did I earn?</button></center>
     </div>
+
+    <!-- When the user gets three questions wrong - doesn't matter if it's consecutively or not, this div will take over the whole page. It doesn't display currently.-->
     <div id="game-over">
         <video loop autoplay>
             <source src="video/outer-space.mp4" type="video/mp4">
@@ -153,5 +155,6 @@
         <span id="game-over-title">game over</span>
         <button id="play-again">play again</button>
     </div>
+
 </body>
 </html>

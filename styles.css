@@ -318,4 +318,92 @@ header {
     }
 }
 
+#player-is-done {
+
+    background-color: #2ECCFA;
+    border-radius: 30px;
+    border: 2px solid black;
+    font-size: 30px;
+    margin-top: 50px;
+    border-bottom: 10px solid #01A9DB;
+    transform: transition;
+    transition: all .2s ease-in-out;
+}
+
+#player-is-done:active {
+
+    border-bottom: none;
+    top: 5px;
+    position: relative;
+}
+
 /* End styling for Game Over pop up */
+
+/* Begin styling for Winner page */
+
+#background-picture {
+
+    width: 620px;
+    height: 540px;
+    position: relative;
+    top: 150px;
+    left: 450px;
+}
+
+#winner-title {
+
+    font-family: Campus;
+    font-size: 100px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 30px;
+    margin-left: 30px;
+    color: white;
+}
+
+#main-menu-button-winner-page {
+
+    background-color: aqua;
+    color: black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 435px;
+    font-size: 90px;
+    border: 2px solid black;
+    text-transform: uppercase;
+    font-family: Tahoma;
+    cursor: pointer;
+}
+
+#how-many-questions-were-right {
+
+    display: flex;
+    flex-direction: column;
+}
+
+#how-many-questions-were-right span {
+
+    margin: auto;
+}
+
+#bruh-title {
+
+    font-family: Campus;
+    font-size: 200px;
+}
+
+#questions-player-won {
+
+    font-family: Tahoma;
+    font-size: 100px;
+}
+
+#player-earned-medal {
+    font-size: 80px;
+    font-family: Tahoma;
+}
+
+/* End styling for winner page */
