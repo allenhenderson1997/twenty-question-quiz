@@ -71,7 +71,10 @@ function winnerMainMenu() {
 function gameIsComplete() {
 
     medalEarned();
-    window.location = "how-many-questions-you-won.html";
+    document.getElementById("player-won-but-didnt-get-all-questions").style.display = "block";
+    document.querySelector('header').style.display = "none";
+    document.getElementById("scoreboard").style.display = "none";
+    document.getElementById("questions-container").style.display = "none";
 }
 
 // All questions //

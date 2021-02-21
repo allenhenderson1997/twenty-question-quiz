@@ -1,32 +1,3 @@
-@media (max-width: 400px) {
-
-    .navigation-bar {
-
-        background: linear-gradient(to right, black, gray);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .navigation-bar li {
-
-        justify-content: center;
-    }
-}
-
-@media (max-width: 1069px) {
-
-    .navigation-bar {
-
-        display: flex;
-    }
-
-    .navigation-bar li {
-
-        flex-direction: row;
-    }
-}
-
 @font-face {
 
     font-family: Beautiful Friends;
@@ -378,6 +349,15 @@ header {
     cursor: pointer;
 }
 
+/* Styling for the container if the user finishes the game, but gets enough questions right to win the game */
+
+#player-won-but-didnt-get-all-questions {
+
+    background-color: darkred;
+    height: 100vh;
+    display: none;
+}
+
 #how-many-questions-were-right {
 
     display: flex;
@@ -407,3 +387,16 @@ header {
 }
 
 /* End styling for winner page */
+
+@media (min-width: 375px) {
+
+    .main-title {
+
+        display: none;
+    }
+
+    body {
+
+        background-color: blue;
+    }
+}
