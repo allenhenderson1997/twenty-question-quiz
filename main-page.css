@@ -5,25 +5,39 @@
         background: linear-gradient(to right, black, gray);
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 0;
     }
 
     .navigation-bar li {
 
-        justify-content: center;
-    }
-}
-
-@media (max-width: 1069px) {
-
-    .navigation-bar {
-
-        display: flex;
+        text-align: center;
+        margin: 0;
+        font-size: 50px;
+        border: 2px solid white;
     }
 
-    .navigation-bar li {
+    .navigation-bar li a {
 
-        flex-direction: row;
+        text-align: center;
+    }
+
+    body {
+
+        background-color: black;
+    }
+
+    #main-title-text {
+
+        font-size: 35px;
+        text-align: center;
+        margin-top: 0;
+        margin-left: 20px;
+    }
+
+    .main-title video {
+
+        display: none;
     }
 }
 
@@ -44,7 +58,7 @@ header {
 
 /* Styling for main page */
 
-.main-title h1,
+.main-title span,
 .main-title p {
 
     position: relative;
@@ -54,10 +68,11 @@ header {
     
 }
 
-.main-title h1 {
+.main-title span {
 
-    font-size: 100px;
+    font-size: 150px;
     font-family: Crackman;
+    text-align: center;
 }
 
 .main-title p {

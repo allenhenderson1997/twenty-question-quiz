@@ -23,7 +23,11 @@ header {
 
 /* Styling for main page */
 
-.main-title h1,
+.main-title span {
+
+    position: relative;
+    color: white;
+}
 .main-title p {
 
     position: absolute;
@@ -146,25 +150,6 @@ header {
 
 /* All styling for the questions */
 
-.questions-anchors {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    list-style-type: none;
-    background-color: #0080FF;
-    margin-left: 0;
-    padding-left: 0;
-}
-
-
-
-.questions-anchors li a {
-
-    text-decoration: none;
-    color: white;
-    font-family: Tahoma;
-}
 
 #questions-container {
 
@@ -388,15 +373,150 @@ header {
 
 /* End styling for winner page */
 
-@media (min-width: 375px) {
+@media (max-width: 400px) {
 
-    .main-title {
+    .navigation-bar {
 
-        display: none;
+        background: linear-gradient(to right, black, gray);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-bottom: 0;
+    }
+
+    .navigation-bar li {
+
+        text-align: center;
+        margin: 0;
+        font-size: 50px;
+        border: 2px solid white;
+    }
+
+    .navigation-bar li a {
+
+        text-align: center;
     }
 
     body {
 
-        background-color: blue;
+        background-color: black;
+    }
+
+    .how-to-play-video {
+
+        display: none;
+    }
+
+    header {
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    header #logo {
+
+        transform: rotate(0deg);
+        text-align: center;
+    }
+
+    .navigation-bar {
+
+        margin-right: 35px;
+    }
+
+    .rules-of-quiz {
+
+        display: block;
+        margin-top: 150px;
+        width: 100%;
+    }
+    .rules-of-quiz p,
+    .rules-of-quiz ol {
+
+        padding: 0;
+        margin-left: 0;
+        margin-right: 200px;
+        text-align: left;
+    }
+
+    .medals-rewards li {
+
+        font-size: 15px;
+    }
+
+    #questions-container {
+
+        box-shadow: none;
+    }
+
+    #questions-container h2 {
+
+        color: white;
+    }
+
+    .question-title {
+
+        color: white;
+    }
+
+    #winner-title {
+
+        font-family: Tahoma;
+    }
+
+    #background-picture {
+
+        width: 120px;
+        height: 40px;
+    }
+
+    #player-won-but-didnt-get-all-questions {
+
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        margin-top: 0;
+    }
+
+    #player-won-but-didnt-get-all-questions #bruh-title {
+
+        font-size: 125px;
+        margin-top: 140px;
+    }
+
+    #player-won-but-didnt-get-all-questions #player-earned-medal {
+
+        font-size: 50px;
+        text-align: center;
+    }
+
+    #player-won-but-didnt-get-all-questions #questions-player-won {
+
+        font-size: 35px;
+    }
+
+    #game-over video {
+
+        width: 100vw;
+        height: 100vh;
+        object-fit: fill;
+        z-index: 1;
+        /* display: none; */
+    }
+
+    #game-over #game-over-title {
+
+        z-index: 4;
+        font-size: 10px;
+        margin: 0;
+        position: absolute;
+        top: 350px;
+        left: 65px;
+        font-size: 50px;
+    }
+
+    #game-over #play-again {
+
+
     }
 }
