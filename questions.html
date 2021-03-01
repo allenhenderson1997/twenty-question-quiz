@@ -147,23 +147,26 @@
         <center><button type="button" id="player-is-done" onclick="gameIsComplete()">What medal did I earn?</button></center>
     </div>
 
+
+
+    
     <!-- When the user gets three questions wrong - doesn't matter if it's consecutively or not, this div will take over the whole page. It doesn't display currently.-->
     <div id="game-over">
         <video loop autoplay>
             <source src="video/outer-space.mp4" type="video/mp4">
         </video>
         <span id="game-over-title">game over</span>
-        <button id="play-again">play again</button>
+        <button id="play-again" onclick="window.location = 'index.html';">play again</button>
     </div>
-
+    
     <!-- The code below will run if the player plays the game and doesn't get all the questions. -->
 
     <div id="player-won-but-didnt-get-all-questions">
 
         <div id="how-many-questions-were-right">
             <span id="bruh-title">BRUH!</span>
-            <span id="player-earned-medal"></span>
-            <span id="questions-player-won"></span>
+            <span id="player-earned-medal" style="display: block;">Medal You Earned: Gold</span>
+            <span id="questions-player-won" style="display: block;">You only got ## questions correct!</span>
         </div>
         <button type="button" id="main-menu-button-winner-page" onclick="winnerMainMenu()">main menu</button>
     </div>
