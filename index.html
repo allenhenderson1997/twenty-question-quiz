@@ -4,15 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="main-page.css">
+    <script src="questions-behavior.js"></script>
     <title>20 Questions Quiz</title>
 </head>
 <body>
     <header>
+        <span id="logo">20 questions</span>
         <ul class="navigation-bar">
             <li><a href="index.html">main menu</a></li>
             <li><a href="how-to-play.html">how to play</a></li>
             <li><a href="questions.html">play the quiz</a></li>
         </ul>
+        <div id="hamburger-icon" onclick="toggleNavMenu()">
+                <div id="line-one"></div>
+                <div id="line-two"></div>
+                <div id="line-three"></div>
+            </div>
+        
+        <div id="mobile-nav-container">
+            
+            <ul id="mobile-nav-menu">
+                <li><a href="index.html">main menu</a></li>
+                <li><a href="how-to-play.html">how to play</a></li>
+                <li><a href="questions.html">play the quiz</a></li>
+            </ul>
+            </div>
     </header>
 
     <section class="main-title">

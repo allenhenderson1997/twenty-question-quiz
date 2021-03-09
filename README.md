@@ -14,3 +14,5 @@ That is the button you will push to answer each question.
 8. Once you answer the questions, click the button at the bottom that says "What medal did I get?".
 
 *PLEASE NOTE: Due to the video background in two of the pages, you will need to play the game using FireFox. Google Chrome does not want to autoplay the video for some reason.
+
+https://allenhenderson1997.github.io/twenty-question-quiz/index

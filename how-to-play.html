@@ -6,15 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How To Play | 20 Questions Quiz</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="questions-behavior.js"></script>
 </head>
 <body>
     <header>
         <span id="logo">20 questions</span>
-        <ul class="navigation-bar" style="background-color: none;">
+        <ul class="navigation-bar">
             <li><a href="index.html">main menu</a></li>
             <li><a href="how-to-play.html">how to play</a></li>
             <li><a href="questions.html">play the quiz</a></li>
         </ul>
+        <div id="hamburger-icon" onclick="toggleNavMenu()">
+                <div id="line-one"></div>
+                <div id="line-two"></div>
+                <div id="line-three"></div>
+            </div>
+        
+        <div id="mobile-nav-container">
+            
+            <ul id="mobile-nav-menu">
+                <li><a href="index.html">main menu</a></li>
+                <li><a href="how-to-play.html">how to play</a></li>
+                <li><a href="questions.html">play the quiz</a></li>
+            </ul>
+            </div>
     </header>
     <section class="how-to-play-video">
         <video autoplay loop>
