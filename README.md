@@ -21,4 +21,4 @@ In my game, I have several things used here.
 
 *PLEASE NOTE: Due to the video background in two of the pages, you will need to play the game using FireFox. Google Chrome does not want to autoplay the video for some reason.
 
-https://allenhenderson1997.github.io/twenty-question-quiz/index
+https://allenhenderson1997.github.io/twenty-question-quiz/indexgit
