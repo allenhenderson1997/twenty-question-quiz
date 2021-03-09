@@ -66,6 +66,12 @@ header {
 
 }
 
+#hamburger-icon,
+#mobile-nav-container {
+
+    display: none;
+}
+
 .navigation-bar li a {
 
     text-decoration: none;
@@ -399,15 +405,19 @@ header {
         display: none;
     }
 
+    #hamburger-icon {
+
+        display: block;
+    }
+
     #mobile-nav-container {
 
         transition: all .5s ease-in-out;
-        display: none;
+        display: block;
     }
 
     #mobile-nav-menu {
 
-        display: block;
         list-style-type: none;
         transition: all .5s ease-in-out;
     }
@@ -589,6 +599,11 @@ header {
         display: none;
     }
 
+    #hamburger-icon {
+
+        display: block;
+    }
+
     #mobile-nav-container {
 
         position: fixed;
@@ -599,6 +614,7 @@ header {
         transform: transition;
         transition: all .5s ease-in-out;
         opacity: 0;
+        display: block;
     }
 
     #mobile-nav-menu {
