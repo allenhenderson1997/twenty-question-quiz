@@ -527,16 +527,18 @@ function toggleNavMenu() {
     const lTwo = document.getElementById("line-two");
     const lThree = document.getElementById("line-three");
 
-    if (xx.style.display == "none") {
+    const switcher = window.getComputedStyle(xx);
 
-        xx.style.display = "block";
-        xx.style.opacity = "1";
+    if (switcher.style.display == "none") {
+
+        switcher.style.display = "block";
+        switcher.style.opacity = "1";
         lOne.style.backgroundColor = "red";
         lTwo.style.backgroundColor = "orange";
         lThree.style.backgroundColor = "yellow";
     } else {
 
-        xx.style.display = "none";
+        switcher.style.display = "none";
         lOne.style.backgroundColor = "white";
         lTwo.style.backgroundColor = "white";
         lThree.style.backgroundColor = "white";
