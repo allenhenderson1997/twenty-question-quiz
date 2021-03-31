@@ -38,6 +38,8 @@ header {
 
     width: 100%;
     position: fixed;
+    min-width: 100vw;
+    min-height: 100vw;
 }
 
 /* End of styling for main page */

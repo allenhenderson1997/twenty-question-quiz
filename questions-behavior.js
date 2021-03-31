@@ -529,16 +529,16 @@ function toggleNavMenu() {
 
     const switcher = window.getComputedStyle(xx);
 
-    if (switcher.style.display == "none") {
+    if (switcher.display == "none") {
 
-        switcher.style.display = "block";
-        switcher.style.opacity = "1";
+        xx.style.display = "block";
+        xx.style.opacity = "1";
         lOne.style.backgroundColor = "red";
         lTwo.style.backgroundColor = "orange";
         lThree.style.backgroundColor = "yellow";
     } else {
 
-        switcher.style.display = "none";
+        xx.style.display = "none";
         lOne.style.backgroundColor = "white";
         lTwo.style.backgroundColor = "white";
         lThree.style.backgroundColor = "white";
